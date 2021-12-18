@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu > div {
+  height: 60px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+}
+
+#menu > div #time {
+  font-weight: bold;
+  color: red;
+  margin: 0 20px;
+}
+
+button {
+  margin: 10px 0;
+  height: 60px;
+  width: 200px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#game-container {
+  height: 90vw;
+  max-height: 600px;
+  width: 90vw;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: solid 2px black;
+  --size: calc(100% / 4);
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#game-container > div {
+  height: var(--size);
+  width: var(--size);
+  border: solid 2px black;
+}
+
+#game-container > div#box1 {
+  margin: 0 auto;
+}
+
+#game-container > div#box2 {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+#game-container > div#box3 {
+  margin-right: 0;
+  margin-left: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#game-container > div#box4 {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
